@@ -11,7 +11,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
+	margin: 10px;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -56,14 +56,6 @@ img {
 	max-width: 100%;
 }
 
-.container {
-	display: flex;
-	flex-wrap: wrap;
-}
-.header {
-	display: flex;
-	height: 40px;
-}
 h1{
 font-weight: bold;
 font-size: 30px;
@@ -76,21 +68,96 @@ strong {
 	font-weight: bold;
 }
 
-
-.wrap {
-	min-height:100vh ;
+main {
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+header {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
 
-@media (min-width: 320px) {
-	.header {
-		display: flex;
-	}
+footer {
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+}
+
+.skill > p {
+	text-align: center;
+	align-items: center;
 }
 
 @media (min-width: 768px) {
-	
+	.header-nav .main-nav{
+		display: flex;
+		justify-content: center;
+	}
+
+	.header-nav .name {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.header-img {
+		display: flex;
+		align-items: center;
+	}
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.col {
+		flex: 1 50%;
+	}
+
+	.footer-nav {
+		display: flex;
+		justify-content: center;
+	}
+
+	.skill {
+		display:flex;
+		justify-content: center;
+	}
+
 }
 
 @media (min-width: 1024px) {
 	
+	.header-nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	main {
+		display: flex;
+	}
+
+	.row {
+		flex-wrap: wrap;
+		flex: 1;
+	}
+	
+	footer .footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.footer-nav {
+		display: flex;
+	}
+
+	.skill {
+		display: flex;
+		justify-content: space-around;
+	}
 }
