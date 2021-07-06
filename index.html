@@ -13,7 +13,7 @@
 <body>
 
 <!-- header -->
-      <header>
+      <header id='home'>
           <div class="header-nav">
             <h1 class="name"><a href="#">Steve Fernandes</a></h1>
             <nav>
@@ -27,9 +27,9 @@
           <div class="header-img">
             <div class="paragraph">
               <p>Hi! I'm a front end developer who loves responsive desion and css. I recently finished learning front-end web development at treehouse and am excited to put all my skills to use!</p>
-            </div>
-            <div class="image">
-              <img src="images/responsive-layout-profile.png" alt="profile">
+              <div class="image">
+                <img src="images/responsive-layout-profile.png" alt="profile">
+              </div>
             </div>
           </div>
       </header> 
@@ -83,11 +83,13 @@
           <p>Email: <strong> Email@yoursite.com </strong> </p>
         </div>
         <!-- Skills-->
-        <div class="skill" id="skills">
+        <div class="skill">
           <h1>Skills</h1>
-          <p>Javascript</p>
-          <p>html</p>
-          <p>CSS</p>
+          <ul id ="skills">
+            <li>Javascript </li>
+            <li>html </li>
+            <li>CSS </li>
+          </ul>
         </div>
     </main>
 <!--FOOTER -->
@@ -99,6 +101,7 @@
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="index.html">Home</a></li>
           </ul>
         </nav>
     </div>
