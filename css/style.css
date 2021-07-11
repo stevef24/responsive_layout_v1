@@ -105,6 +105,10 @@ a:hover {
 	transform: scale(1.1);
 }
 
+.full {
+	display: none;
+ }
+
 @media (min-width: 768px) {
 	.header-nav .main-nav{
 		display: flex;
@@ -146,7 +150,13 @@ a:hover {
 		display:flex;
 		justify-content: center;
 	}
-
+	.top {
+		display: none;
+	 }
+	 
+	 .full {
+		display: inline;
+	}
 }
 
 @media (min-width: 1024px) {
@@ -185,4 +195,9 @@ a:hover {
 	.col {
 		flex-basis: calc(33% - 20px);
 	}
+
+	.top {
+		display: none;
+	 }
+	
 }
