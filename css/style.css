@@ -121,9 +121,8 @@ a:hover {
 		text-align: center;
 	}
 
-	.header-img {
+	.paragraph {
 		display: flex;
-		align-items: center;
 	}
 
 	.row {
