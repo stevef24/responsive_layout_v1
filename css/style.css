@@ -20,7 +20,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 	text-decoration: none;
 }
@@ -85,10 +84,10 @@ header {
 	text-align: center;
 }
 
-footer {
-	display: flex;
-	text-align: center;
-	flex-direction: column;
+.footer {
+display: flex;
+align-content: space-around;
+align-items: center;
 }
 
 .skill > p {
