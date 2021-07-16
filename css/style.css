@@ -108,6 +108,21 @@ a:hover {
 	display: none;
  }
 
+ footer * {
+  margin: 0;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: initial;
+}
+footer h1.name {
+  font-size: 24px;
+}
+footer li.full {
+  padding: 0 10px;
+}
+
 @media (min-width: 768px) {
 	.header-nav .main-nav{
 		display: flex;
